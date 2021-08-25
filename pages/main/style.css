@@ -10,7 +10,7 @@
 body {
     margin: 0;
     padding: 0;
-    cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/cursor.svg'), auto;
+    cursor: url('../assets/icons/cursor.svg'), auto;
 }
 
 .wrapper {
