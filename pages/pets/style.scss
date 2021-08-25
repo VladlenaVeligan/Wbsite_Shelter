@@ -1,0 +1,328 @@
+$color-light-s: #FAFAFA;
+$color-light-l: #F6F6F6;
+$color-light-xl: #FFFFFF;
+$color-dark-s: #CDCDCD;
+$color-dark-m: #B2B2B2;
+$color-dark-l: #545454;
+$color-dark-xl: #4C4C4C;
+$color-dark-2xl: #444444;
+$color-dark-3xl: #292929;
+$color-primary: #F1CDB3;
+$color-primary-light:#FDDCC4;
+$start-screen-gradient-background: url(/vladlenaveligan-JS2020Q3/shelter/assets/icons/noise_transparent.svg),
+radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%),
+#211F20;
+$footer-gradient-background: url(/vladlenaveligan-JS2020Q3/shelter/assets/icons/noise_transparent.svg),
+radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%),
+#211F20;
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    max-width: 75rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.h3_title {
+    font-family: Georgia;
+    color: $color-dark-l;
+    font-weight: 400;
+    font-size: 2.15rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.15rem;
+}
+
+
+/************** HEADER **************/
+
+.header {
+    width: 100%;
+    background: $color-light-xl;
+    position: sticky;
+    top: 0rem;
+    padding-top: 1.87rem;
+    padding-bottom: 1.87rem;
+}
+
+.header_position {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo__title {
+    color: $color-dark-l;
+    font-family: Georgia;
+    font-size: 2rem;
+    line-height: 110%;
+    letter-spacing: 0.12rem;
+    font-weight: 400;
+}
+
+.logo__subtitle {
+    color: $color-dark-3xl;
+    font-family: Arial;
+    font-size: 0.8125rem;
+    line-height: 110%;
+    letter-spacing: 0.1rem;
+    padding-top: 10px;
+}
+
+.menu {
+    width: 443px;
+    display: flex;
+}
+
+.list {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list__item {
+    color: $color-dark-l;
+    font-family: Arial;
+    font-size: 0.93rem;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.list__item:hover {
+    cursor: pointer;
+    border-bottom: solid 3px $color-primary;
+    color: $color-dark-3xl;
+    border-style: none;
+}
+
+.list__item_active {
+    color: $color-dark-3xl;
+    border-bottom: solid 3px $color-primary;
+}
+
+
+/************** OUR FRIENDS **************/
+
+.our-friends_main {
+    display: flex;
+    text-align: center;
+    background-color: $color-light-l;
+}
+
+.our-friends {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-friends_title {
+    padding-top: 5rem;
+    padding-bottom: 3.6rem;
+}
+
+.our-friends_slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-friends_card {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 2fr;
+    grid-template-columns: 4fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 1.9rem;
+    grid-column-gap: 2.5rem;
+    padding-bottom: 3.75rem;
+}
+
+.our-friends_card-pets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.6rem;
+    background-color: $color-light-s;
+    padding-bottom: 2rem;
+}
+
+.our-friends_card-pets:hover {
+    cursor: pointer;
+    background-color: $color-light-xl;
+}
+
+.card_img {
+    padding-bottom: 1.83rem;
+}
+
+.card_title {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.437rem;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    padding-bottom: 1.875rem;
+}
+
+.card_button {
+    width: 187px;
+    height: 52px;
+    border: 2px solid $color-primary;
+    border-radius: 100px;
+    background-color: $color-light-s;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 1.06rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.06em;
+    color: $color-dark-3xl;
+}
+
+.card_button:hover {
+    cursor: pointer;
+    background-color: $color-primary-light;
+    border: 2px solid $color-primary-light;
+}
+
+.our-friends_button {
+    margin-top: 3.75rem;
+    margin-bottom: 6.25rem;
+}
+
+.button_group {
+    width: 28%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 6.25rem;
+}
+
+.circle_button {
+    width: 3.25rem;
+    height: 3.25rem;
+    background-color: $color-light-l;
+    border: 2px solid $color-primary;
+    box-sizing: border-box;
+    border-radius: 6.25rem;
+    text-align: center;
+    border-style: none;
+}
+
+.circle_button:hover {
+    cursor: pointer;
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+}
+
+.circle_button_no-active {
+    width: 3.25rem;
+    height: 3.25rem;
+    background-color: $color-light-l;
+    border: 2px solid $color-dark-s;
+    box-sizing: border-box;
+    border-radius: 6.25rem;
+    text-align: center;
+}
+
+.third_btn {
+    background-color: $color-primary;
+    color: $color-dark-3xl;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+
+/************** FOOTER **************/
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: $footer-gradient-background;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2.5rem;
+}
+
+.footer_text {
+    color: $color-primary;
+    text-decoration: none;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.44rem;
+    letter-spacing: 0.08rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer_text:hover {
+    cursor: pointer;
+    border-bottom: solid 1px $color-primary-light;
+    color: $color-primary-light;
+}
+
+.footer_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.questions {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.1rem;
+}
+
+.waiting {
+    width: 27%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.1rem;
+}
+
+.footer_icon {
+    padding-right: 20px;
+}
+
+.footer_title {
+    color: $color-light-xl;
+}

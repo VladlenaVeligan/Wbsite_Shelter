@@ -1,0 +1,987 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/cursor.svg'), auto;
+}
+
+.wrapper {
+    max-width: 75rem;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.background {
+    background: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/noise_transparent@2x.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.h3_title {
+    font-family: Georgia;
+    color: #545454;
+    font-weight: 400;
+    font-size: 2.15rem;
+    line-height: 2.9rem;
+    letter-spacing: 0.15rem;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 3.75rem;
+}
+
+.header_position {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo__title {
+    color: #F1CDB3;
+    font-family: Georgia;
+    font-size: 2rem;
+    line-height: 110%;
+    letter-spacing: 0.12rem;
+    font-weight: 400;
+}
+
+.logo__subtitle {
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 0.8125rem;
+    line-height: 110%;
+    letter-spacing: 0.1rem;
+    padding-top: 10px;
+}
+
+.menu_nav {
+    width: 443px;
+    display: flex;
+}
+
+.list {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list__item {
+    color: #CDCDCD;
+    font-family: Arial;
+    font-size: 0.93rem;
+    line-height: 160%;
+    font-weight: 400;
+}
+
+.burger-menu__button,
+.open_burger {
+    display: none;
+}
+
+.item-turnOn {
+    color: #CDCDCD;
+    text-decoration: none;
+}
+
+.item-turnOn:hover {
+    cursor: pointer;
+    cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/pointer.svg'), pointer;
+    border-bottom: solid 3px #F1CDB3;
+    color: #FAFAFA;
+}
+
+.list__item_active {
+    color: #FAFAFA;
+    border-bottom: solid 3px #F1CDB3;
+}
+
+
+/*************NOT ONLY*****************/
+
+.not-only_main {
+    padding-top: 11.25rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.not-only {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.not-only_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 89%;
+}
+
+.not-only_title {
+    color: #FFFFFF;
+    font-family: Georgia;
+    font-size: 2.75rem;
+    line-height: 3.56rem;
+    max-width: 19.375rem;
+    font-weight: 400;
+    margin-bottom: 2.625rem;
+}
+
+.button_not-only {
+    display: flex;
+}
+
+.not-only_subtitle {
+    color: #CDCDCD;
+    font-family: Arial;
+    font-size: 0.94rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 2.565rem;
+    max-width: 92%;
+}
+
+.dog-photo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.button {
+    padding: 16px 45px;
+    background: #F1CDB3;
+    border-radius: 100px;
+    border: none;
+    color: #292929;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 1.06rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.07rem;
+}
+
+.button:hover {
+    cursor: pointer;
+    cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/pointer.svg'), pointer;
+    background-color: #FDDCC4;
+}
+
+
+/********************ABOUT*************************/
+
+.about_main {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    width: 71%;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_title {
+    padding-top: 0.4rem;
+}
+
+.about_content {
+    width: 50%;
+    height: 97%;
+    margin-right: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about_subtitle {
+    font-family: Arial;
+    color: #4C4C4C;
+    font-weight: 400;
+    font-size: 0.937rem;
+    line-height: 1.5rem;
+    padding-bottom: 0.25rem;
+}
+
+
+/********************OUR FRIENDS*************************/
+
+.our-friends_main {
+    text-align: center;
+    background-color: #F6F6F6;
+}
+
+.our-friends {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.our-friends_title {
+    padding-top: 5rem;
+    padding-bottom: 3.6rem;
+}
+
+.our-friends_slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our-friends_circle-button {
+    width: 3.25rem;
+    height: 3.25rem;
+    background-color: #F6F6F6;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 6.25rem;
+    text-align: center;
+}
+
+.our-friends_circle-button:hover {
+    cursor: pointer;
+    cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/pointer.svg'), pointer;
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
+}
+
+.our-friends_card {
+    width: 82%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition: left 500ms linear;
+}
+
+.our-friends_card-pets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5.5rem;
+    border-radius: 0.6rem;
+    background-color: #FAFAFA;
+    padding-bottom: 2rem;
+}
+
+.our-friends_card-pets:hover {
+    box-shadow: 6px 0px 17px 8px rgba(172, 171, 171, 0.3);
+}
+
+.our-friends_card-pets:hover {
+    cursor: pointer;
+    cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/pointer.svg'), pointer;
+    background-color: #FFFFFF;
+}
+
+.card_img {
+    padding-bottom: 1.83rem;
+}
+
+.card_title {
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.437rem;
+    letter-spacing: 0.06em;
+    color: #545454;
+    padding-bottom: 1.875rem;
+}
+
+.card_button {
+    width: 187px;
+    height: 52px;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    background-color: #FAFAFA;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 1.06rem;
+    line-height: 1.3rem;
+    letter-spacing: 0.06em;
+    color: #292929;
+}
+
+.card_button:hover {
+    cursor: pointer;
+    cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/pointer.svg'), pointer;
+    background-color: #FDDCC4;
+    border: 2px solid #FDDCC4;
+}
+
+.our-friends_button {
+    margin-top: 3.75rem;
+    margin-bottom: 6.25rem;
+}
+
+
+/**********HELP**************/
+
+.help {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.help_title {
+    padding-top: 5rem;
+    padding-bottom: 3.7rem;
+    text-align: center;
+}
+
+.icon {
+    padding-bottom: 1.95rem;
+}
+
+.menu {
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.9rem;
+}
+
+.menu_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 7.5rem;
+    padding-bottom: 3.6rem;
+}
+
+.shampoos {
+    padding-right: 0;
+}
+
+.sleeping {
+    padding-right: 0;
+}
+
+.icon_text {
+    color: #545454;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.15rem;
+    letter-spacing: 0.07rem;
+}
+
+
+/********IN ADDITION****************/
+
+.in-addition_main {
+    background-color: #F6F6F6;
+}
+
+.in-addition {
+    padding-top: 5rem;
+    padding-bottom: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.in-addition_img {
+    padding-right: 1.8rem;
+}
+
+.in-addition_content {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+
+.in-addition_title {
+    padding-bottom: 1.2rem;
+    width: 88%;
+}
+
+.h5_title {
+    font-family: Georgia;
+    color: #545454;
+    font-weight: 400;
+    font-size: 0.937rem;
+    line-height: 1.1rem;
+    letter-spacing: 0.06rem;
+    padding-bottom: 1.25rem;
+}
+
+.card_btn {
+    width: 92%;
+    background-color: #F1CDB3;
+    border-radius: 9px;
+    border-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1.1rem;
+}
+
+.card {
+    font-family: Georgia;
+    color: #545454;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.15rem;
+    letter-spacing: 0.07rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card:hover {
+    cursor: pointer;
+    cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/pointer.svg'), pointer;
+    border-bottom: solid 2px #4C4C4C;
+    color: #4C4C4C;
+}
+
+.card_icon {
+    padding-right: 15px;
+}
+
+.in-addition_paragraph {
+    font-family: Arial;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.2rem;
+    padding-top: 1.1rem;
+    color: #B2B2B2;
+}
+
+
+/******************FOOTER**************/
+
+.footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url(/vladlenaveligan-JS2020Q3/shelter/assets/icons/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2.5rem;
+}
+
+.footer_text {
+    color: #F1CDB3;
+    text-decoration: none;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.44rem;
+    letter-spacing: 0.08rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer_text:hover {
+    cursor: pointer;
+    cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/pointer.svg'), pointer;
+    border-bottom: solid 1px #FDDCC4;
+    color: #FDDCC4;
+}
+
+.questions {
+    width: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.1rem;
+}
+
+.waiting {
+    width: 27%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.1rem;
+}
+
+.footer_icon {
+    padding-right: 20px;
+}
+
+.footer_title {
+    width: 99%;
+    color: #FFFFFF;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(41, 41, 41, 0.6);
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 840px) {
+    /**************** HEADER ****************/
+    .header {
+        top: 1.9rem;
+        padding-left: 1.9rem;
+        padding-right: 1.9rem;
+    }
+    .logo__subtitle {
+        letter-spacing: 0.08rem;
+    }
+    /**************** NOT ONLY ****************/
+    .not-only {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .not-only_main {
+        padding-top: 9.4rem;
+    }
+    .not-only_content {
+        margin-left: 9.6rem;
+    }
+    .not-only_title {
+        margin-bottom: 2.7rem;
+    }
+    .not-only_subtitle {
+        width: 77%;
+    }
+    .dog-photo {
+        width: 75%;
+        margin-left: 8rem;
+        margin-top: 5.9rem;
+    }
+    .button_not-only {
+        margin-left: 7.8rem;
+    }
+    /**************** ABOUT ****************/
+    .about {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 5.95rem;
+    }
+    .about_content {
+        width: 79%;
+        height: 45%;
+        margin-right: 0;
+    }
+    .about_title {
+        padding: 0;
+    }
+    .about_subtitle {
+        padding-top: 1.2rem;
+        padding-bottom: 0;
+    }
+    .about_img {
+        padding-top: 4.6rem;
+    }
+    /********** OUR FRIENDS **************/
+    .our-friends_slider {
+        width: 92%;
+    }
+    .our-friends_card {
+        width: 82%;
+    }
+    .our-friends_card-pets {
+        margin-right: 2.5rem;
+    }
+    /**********HELP**************/
+    .menu {
+        width: 86%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 3.7rem;
+        grid-column-gap: 1.9rem;
+        padding-bottom: 6.4rem;
+    }
+    .menu_icon {
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    /********** IN ADDITION **************/
+    .h5_title {
+        letter-spacing: 0.06rem;
+    }
+    .in-addition {
+        flex-basis: 25%;
+        flex-wrap: wrap-reverse;
+        width: 100%;
+    }
+    .in-addition_content {
+        flex-basis: 76%;
+    }
+    .in-addition_paragraph {
+        padding-top: 1.3rem;
+    }
+    .footer_title {
+        width: 88%;
+    }
+    .in-addition_img {
+        padding-top: 3.5rem;
+        padding-right: 0;
+    }
+    /********** FOOTER **************/
+    .footer_content {
+        width: 83%;
+        margin-top: 1.8rem;
+        flex-wrap: wrap;
+        height: max-content;
+        justify-content: center;
+    }
+    .questions {
+        width: 50%;
+        height: 14.5rem;
+        padding: 0;
+    }
+    .waiting {
+        width: 50%;
+        height: 14.5rem;
+        padding: 0;
+        padding-left: 1.2rem;
+    }
+    .footer_dog {
+        padding-top: 4rem;
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /**************** HEADER ****************/
+    .header_position {
+        align-items: center;
+    }
+    .list {
+        display: none;
+    }
+    .burger-menu__button,
+    .open_burger {
+        display: block;
+    }
+    .burger-menu__button {
+        width: 30px;
+        height: 22px;
+        z-index: 4;
+        transition: transform 0.5s, -webkit-transform 0.5s;
+        background-color: transparent;
+        border-style: none;
+        outline: none;
+        background-image: url(/vladlenaveligan-JS2020Q3/shelter/assets/icons/burger-main.svg);
+    }
+    .burger-menu__button:hover {
+        cursor: pointer;
+        cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/pointer.svg'), pointer;
+    }
+    .burger-menu__button:active {
+        outline: none;
+    }
+    .burger-menu__button.opened {
+        transform: rotate(90deg);
+    }
+    .header_position,
+    .logo_header {
+        z-index: 4;
+    }
+    .logo_header {
+        position: absolute;
+        top: 30px;
+        right: 126px;
+    }
+    .open_burger {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 320px;
+        height: 100%;
+        background: #292929;
+        visibility: hidden;
+    }
+    .open_burger.opened {
+        visibility: visible;
+    }
+    .scroll-off {
+        height: 100%;
+        overflow: hidden;
+    }
+    .logo.opened {
+        visibility: hidden;
+    }
+    .list_open {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+    }
+    .list__item {
+        font-size: 32px;
+        height: 10%;
+    }
+    .overlay.show {
+        display: block;
+    }
+}
+
+
+/****************** 320PX   **************/
+
+@media only screen and (max-width: 520px) {
+    /**************** HEADER ****************/
+    .header {
+        position: inherit;
+        padding: 1.95rem 3.3rem 1.9rem 0.6rem;
+    }
+    .logo {
+        width: 73%;
+    }
+    .menu_nav {
+        display: none;
+    }
+    .header_position {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu {
+        display: none;
+    }
+    /**************** NOT ONLY ****************/
+    .not-only_main {
+        padding: 0;
+    }
+    .button_not-only {
+        margin: 0;
+    }
+    .not-only_content {
+        align-items: center;
+        margin: 0;
+    }
+    .not-only_title {
+        letter-spacing: 0.06rem;
+        line-height: 2rem;
+        text-align: center;
+        font-size: 1.6rem;
+        width: 76%;
+        padding-top: 1.9rem;
+        padding-bottom: 2.6rem;
+        margin: 0;
+    }
+    .not-only_subtitle {
+        text-align: center;
+        width: 92%;
+    }
+    .dog-photo {
+        width: 81%;
+        margin-top: 6.7rem;
+        margin-left: 2.4rem;
+    }
+    /**************** ABOUT ****************/
+    .h3_title {
+        font-size: 1.6rem;
+    }
+    .about {
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: flex-end;
+        padding-top: 2.6rem;
+        padding-bottom: 0.25rem;
+    }
+    .about_content {
+        width: 85%;
+    }
+    .about_title {
+        padding: 0;
+        letter-spacing: 0.12rem;
+        line-height: 2.1rem;
+        text-align: center;
+        width: 103%;
+    }
+    .about_subtitle {
+        text-align: justify;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.02rem;
+        padding-top: 1.43rem;
+        padding-bottom: 0;
+        margin-left: 2px;
+    }
+    .about_img {
+        width: 81%;
+        padding-top: 5rem;
+    }
+    /**************** OUR FRIEND ****************/
+    .our-friends {
+        width: 100%;
+    }
+    .our-friends_title {
+        letter-spacing: 0.12rem;
+        line-height: 2.1rem;
+        padding-top: 2.6rem;
+        padding-bottom: 0;
+    }
+    .our-friends_card {
+        width: 85%;
+    }
+    .our-friends_button {
+        margin-bottom: 2.7rem;
+    }
+    .our-friends_slider {
+        width: 100%;
+        margin-top: -0.7rem;
+        flex-direction: column;
+    }
+    .button_left {
+        position: relative;
+        top: 31.6rem;
+        right: 4.1rem;
+    }
+    .button_right {
+        position: relative;
+        top: 1.2rem;
+        left: 4.1rem;
+    }
+    /**********HELP**************/
+    .menu {
+        width: 91%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 1.7rem;
+        grid-column-gap: 1.9rem;
+        padding-bottom: 2.65rem;
+    }
+    .menu_icon {
+        padding: 0;
+    }
+    .help_title {
+        line-height: 2rem;
+        letter-spacing: 0.12rem;
+        padding-top: 2.7rem;
+        padding-bottom: 2.55rem;
+    }
+    .icon {
+        padding-bottom: 1.355rem;
+        width: 38%;
+    }
+    .icon_text {
+        font-size: 0.9rem;
+    }
+    /********** IN ADDITION **************/
+    .in-addition {
+        flex-basis: 94%;
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        padding-top: 2.6rem;
+        padding-bottom: 2.55rem;
+    }
+    .in-addition_content {
+        flex-basis: 93%;
+    }
+    .in-addition_paragraph {
+        padding-top: 1.3rem;
+        text-align: justify;
+        line-height: 1.13rem;
+        padding-bottom: 2.5rem;
+    }
+    .in-addition_title {
+        width: 100%;
+        line-height: 2rem;
+        letter-spacing: 0.13rem;
+        padding-bottom: 1.5rem;
+    }
+    .h5_title {
+        font-family: Arial;
+        font-size: 0.9rem;
+        text-align: center;
+        font-weight: 400;
+        letter-spacing: 0.02rem;
+        padding-bottom: 1.5rem;
+    }
+    .card_btn {
+        width: 100%;
+        justify-content: center;
+        padding: 0.6rem 0.1rem;
+    }
+    .card {
+        font-size: 0.9rem;
+    }
+    .in-addition_img {
+        width: 88%;
+        padding: 0;
+    }
+    /**************** FOOTER ****************/
+    .footer_content {
+        flex-direction: column;
+    }
+    .footer_title {
+        line-height: 2rem;
+        letter-spacing: 0.12rem;
+        width: 91%;
+    }
+    .h3_waiting {
+        margin-left: 15px;
+    }
+    .footer_text {
+        letter-spacing: 0.07rem;
+    }
+    .h3_title {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .questions {
+        width: 100%;
+        height: 13rem;
+        align-items: center;
+    }
+    .h3-waiting {
+        padding-left: 33px;
+    }
+    .waiting {
+        width: 18.5rem;
+        height: 14rem;
+        padding: 0;
+        margin-top: 2.5rem;
+        margin-left: -15px;
+    }
+    .footer_dog {
+        padding-top: 2.2rem;
+        margin-left: 7px;
+        width: 95%;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,534 @@
+   * {
+       margin: 0;
+       padding: 0;
+       -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       box-sizing: border-box;
+   }
+   
+   body {
+       margin: 0;
+       padding: 0;
+       cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/cursor.svg'), auto;
+   }
+   
+   .open_burger,
+   .burger-menu__button {
+       display: none;
+   }
+   
+   .wrapper {
+       max-width: 80rem;
+       display: flex;
+       margin: 0 auto;
+       justify-content: center;
+   }
+   
+   .h3_title {
+       font-family: Georgia;
+       color: #545454;
+       font-weight: 400;
+       font-size: 2.15rem;
+       line-height: 2.9rem;
+       letter-spacing: 0.15rem;
+   }
+   /************** HEADER **************/
+   
+   .header {
+       width: 100%;
+       background: #FFFFFF;
+       position: sticky;
+       top: 0rem;
+       padding-top: 1.87rem;
+       padding-bottom: 1.87rem;
+   }
+   
+   .header_position {
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+   }
+   
+   .logo {
+       width: 100;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+   
+   .logo:hover {
+       cursor: pointer;
+   }
+   
+   .logo__title {
+       color: #545454;
+       font-family: Georgia;
+       font-size: 2rem;
+       line-height: 110%;
+       letter-spacing: 0.12rem;
+       font-weight: 400;
+   }
+   
+   .logo__subtitle {
+       color: #292929;
+       font-family: Arial;
+       font-size: 0.8125rem;
+       line-height: 110%;
+       letter-spacing: 0.1rem;
+       padding-top: 10px;
+   }
+   
+   .menu {
+       width: 443px;
+       display: flex;
+   }
+   
+   .list {
+       margin: 0 auto;
+       padding: 0;
+       width: 100%;
+       list-style-type: none;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .list__item,
+   .list__item_none {
+       color: #545454;
+       font-family: Arial;
+       font-size: 0.93rem;
+       line-height: 160%;
+       font-weight: 400;
+   }
+   
+   .item-turnOn {
+       color: #292929;
+       text-decoration: none;
+   }
+   
+   .item-turnOn:hover {
+       cursor: pointer;
+       border-bottom: solid 3px #F1CDB3;
+       color: #292929;
+   }
+   
+   .list__item_active {
+       color: #292929;
+       border-bottom: solid 3px #F1CDB3;
+   }
+   /************** OUR FRIENDS **************/
+   
+   .our-friends_main {
+       display: flex;
+       text-align: center;
+       background-color: #F6F6F6;
+   }
+   
+   .our-friends {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .our-friends_title {
+       padding-top: 5rem;
+       padding-bottom: 3.7rem;
+   }
+   
+   .our-friends_slider {
+       width: 100%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+   
+   .our-friends_card {
+       width: 100%;
+       display: grid;
+       justify-items: center;
+       grid-template-rows: 2fr;
+       grid-template-columns: 4fr;
+       grid-template-columns: repeat(4, 1fr);
+       grid-row-gap: 1.9rem;
+       grid-column-gap: 2.5rem;
+       padding-bottom: 3.75rem;
+   }
+   
+   .our-friends_card-pets {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-between;
+       border-radius: 0.6rem;
+       background-color: #FAFAFA;
+       padding-bottom: 2rem;
+   }
+   
+   .our-friends_card-pets:hover {
+       cursor: pointer;
+       background-color: #FFFFFF;
+       box-shadow: 6px 0px 17px 8px rgba(172, 171, 171, 0.3);
+   }
+   
+   .card_img {
+       padding-bottom: 1.83rem;
+   }
+   
+   .card_title {
+       font-family: Georgia;
+       font-weight: 400;
+       font-size: 1.25rem;
+       line-height: 1.437rem;
+       letter-spacing: 0.06em;
+       color: #545454;
+       padding-bottom: 1.875rem;
+   }
+   
+   .card_button {
+       width: 11.69rem;
+       height: 3.25rem;
+       border: 2px solid #F1CDB3;
+       border-radius: 100px;
+       background-color: #FAFAFA;
+       font-family: Georgia;
+       font-weight: 400;
+       font-size: 1.06rem;
+       line-height: 1.3rem;
+       letter-spacing: 0.06em;
+       color: #292929;
+   }
+   
+   .card_button:hover {
+       cursor: pointer;
+       background-color: #FDDCC4;
+       border: 2px solid #FDDCC4;
+   }
+   
+   .our-friends_button {
+       margin-top: 3.75rem;
+       margin-bottom: 6.25rem;
+   }
+   
+   .button_group {
+       width: 28%;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding-bottom: 6.25rem;
+   }
+   
+   .circle_button {
+       width: 3.25rem;
+       height: 3.25rem;
+       background-color: #F6F6F6;
+       border: 2px solid #F1CDB3;
+       box-sizing: border-box;
+       border-radius: 6.25rem;
+       text-align: center;
+   }
+   
+   .circle_button:hover {
+       cursor: pointer;
+       background-color: #F1CDB3;
+       border: 2px solid #F1CDB3;
+   }
+   
+   .circle_button_no-active {
+       width: 3.25rem;
+       height: 3.25rem;
+       background-color: #F6F6F6;
+       border: 2px solid #CDCDCD;
+       box-sizing: border-box;
+       border-radius: 6.25rem;
+       text-align: center;
+   }
+   
+   .third_btn {
+       background-color: #F1CDB3;
+       color: #292929;
+       font-family: Georgia;
+       font-weight: 400;
+       font-size: 1.25rem;
+   }
+   
+   .circle_button {
+       color: #292929;
+       font-family: Georgia;
+       font-weight: 400;
+       font-size: 1.25rem;
+   }
+   /************** FOOTER **************/
+   
+   .footer {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       background: url(/vladlenaveligan-JS2020Q3/shelter/assets/icons/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+   }
+   
+   .footer_content {
+       display: flex;
+       justify-content: space-between;
+       align-items: flex-start;
+       margin-top: 2.4rem;
+   }
+   
+   .footer_text {
+       color: #F1CDB3;
+       text-decoration: none;
+       font-family: Georgia;
+       font-weight: 400;
+       font-size: 1.25rem;
+       line-height: 1.44rem;
+       letter-spacing: 0.08rem;
+       display: flex;
+       align-items: center;
+   }
+   
+   .footer_text:hover {
+       cursor: pointer;
+       border-bottom: solid 1px #FDDCC4;
+       color: #FDDCC4;
+   }
+   
+   .questions {
+       width: 25%;
+       height: 80%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       padding-top: 1.1rem;
+   }
+   
+   .waiting {
+       width: 27%;
+       height: 80%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+       padding-top: 1.1rem;
+   }
+   
+   .footer_icon {
+       padding-right: 20px;
+   }
+   
+   .footer_title {
+       color: #FFFFFF;
+   }
+   
+   .overlay {
+       display: none;
+       position: absolute;
+       top: 0;
+       right: 320px;
+       width: 100%;
+       height: 100%;
+       background: rgba(41, 41, 41, 0.6);
+       overflow: hidden;
+   }
+   /**************** 768PX ****************/
+   
+   @media only screen and (max-width: 1195px) {
+       /**************** HEADER ****************/
+       .header {
+           padding-left: 1.9rem;
+           padding-right: 1.9rem;
+       }
+       .logo__subtitle {
+           letter-spacing: 0.08rem;
+       }
+       /**************** OUR FRIENDS ****************/
+       .our-friends_title {
+           padding-bottom: 1.9rem;
+       }
+       .our-friends_slider {
+           height: 1365px;
+           overflow: hidden;
+           align-items: flex-start;
+       }
+       .our-friends_card {
+           grid-template-columns: repeat(2, 1fr);
+       }
+       .button_group {
+           padding-top: 2.5rem;
+           padding-bottom: 4.7rem;
+           width: 59%;
+       }
+       /**************** FOOTER ****************/
+       .footer_content {
+           width: 85%;
+           margin-top: 1.8rem;
+           flex-wrap: wrap;
+           height: max-content;
+           justify-content: center;
+       }
+       .footer_text {
+           letter-spacing: 0.07rem;
+       }
+       .questions {
+           width: 48%;
+           height: 14.5rem;
+           padding: 0;
+       }
+       .waiting {
+           width: 50%;
+           height: 14.6rem;
+           padding: 0;
+           padding-left: 1.7rem;
+       }
+       .footer_dog {
+           padding-top: 4rem;
+           justify-content: flex-start;
+       }
+   }
+   
+   @media only screen and (max-width: 767px) {
+       /**************** HEADER ****************/
+       .header_position {
+           align-items: center;
+       }
+       .list {
+           display: none;
+       }
+       .burger-menu__button,
+       .open_burger {
+           display: block;
+       }
+       .burger-menu__button {
+           width: 30px;
+           height: 22px;
+           z-index: 4;
+           transition: transform 0.5s, -webkit-transform 0.5s;
+           background-color: transparent;
+           border-style: none;
+           outline: none;
+           background-image: url(/vladlenaveligan-JS2020Q3/shelter/assets/icons/burger-pets.svg);
+       }
+       .burger-menu__button:hover {
+           cursor: pointer;
+           cursor: url('/vladlenaveligan-JS2020Q3/shelter/assets/icons/pointer.svg'), pointer;
+       }
+       .burger-menu__button:active {
+           outline: none;
+       }
+       .burger-menu__button.opened {
+           transform: rotate(90deg);
+       }
+       .header_position,
+       .logo_header {
+           z-index: 4;
+       }
+       .logo_header {
+           position: absolute;
+           top: 30px;
+           right: 126px;
+       }
+       .scroll-off {
+           height: 100%;
+           overflow: hidden;
+       }
+       .open_burger {
+           position: fixed;
+           top: 0;
+           right: 0;
+           width: 320px;
+           height: 100%;
+           background: #F6F6F6;
+           visibility: hidden;
+       }
+       .open_burger.opened {
+           visibility: visible;
+       }
+       .logo.opened {
+           visibility: hidden;
+       }
+       .list_open {
+           height: 100%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           list-style-type: none;
+       }
+       .list__item {
+           font-size: 32px;
+           height: 10%;
+       }
+       .overlay.show {
+           display: block;
+       }
+   }
+   /**************** 320PX ****************/
+   
+   @media only screen and (max-width: 600px) {
+       /**************** HEADER ****************/
+       .header {
+           padding: 1.95rem 3.3rem 1.9rem 0.6rem;
+       }
+       .logo {
+           width: 73%;
+       }
+       .list {
+           display: none;
+       }
+       .menu {
+           display: none;
+       }
+       .header_position {
+           justify-content: space-between;
+           align-items: center;
+       }
+       /**************** OUR FRIENDS ****************/
+       .our-friends_title {
+           padding-top: 2.7rem;
+           padding-bottom: 2.8rem;
+           line-height: 1.9rem;
+           letter-spacing: 0.12rem;
+       }
+       .our-friends_card {
+           grid-template-columns: repeat(1, 1fr);
+       }
+       .button_group {
+           width: 18.9rem;
+           padding-bottom: 2.8rem;
+       }
+       /**************** FOOTER ****************/
+       .footer_content {
+           flex-direction: column;
+       }
+       .footer_title {
+           line-height: 2rem;
+           letter-spacing: 0.12rem;
+           width: 91%;
+       }
+       .h3_title {
+           text-align: center;
+           font-size: 1.5rem;
+       }
+       .questions {
+           width: 100%;
+           height: 13rem;
+           align-items: center;
+       }
+       .h3-waiting {
+           padding-left: 33px;
+       }
+       .waiting {
+           width: 18.5rem;
+           height: 14rem;
+           padding: 0;
+           margin-top: 2.5rem;
+           margin-left: -15px;
+       }
+       .footer_dog {
+           padding-top: 2.2rem;
+           margin-left: 7px;
+           width: 95%;
+       }
+   }
+   /*# sourceMappingURL=style.css.map */
